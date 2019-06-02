@@ -29,7 +29,7 @@ app.use('/Monitor', monitor);
       console.log('Models created correctly');
 })();
 
-app.listen(5000, () => console.log('Server is up 2'));
+app.listen(process.env.PORT, () => console.log('Server is up 2'));
 
 app.use('/', (req, res, next) => {
   res.json({"result": "success"});
