@@ -31,6 +31,6 @@ app.use('/Monitor', monitor);
 
 app.listen(5000, () => console.log('Server is up 2'));
 
-app.get('/', (req, res) => {
-  res.status(5000).send("Welcome to API REST")
+app.use('/', (req, res, next) => {
+  res.json({"result": "success"});
 });
