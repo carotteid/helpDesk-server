@@ -1,23 +1,23 @@
 module.exports = {
   development: {
-    username: 'root',
-    password: 'password',
-    database: 'helpDesk',
-    host: 'localhost',
+    username: 'helpDesk@helpdesk',
+    password: 'HDroot@01',
+    database: 'helpdesk',
+    host: 'helpdesk.mysql.database.azure.com',
     dialect: 'mysql'
   },
   test: {
-    username: 'root',
-    password: 'password',
-    database: 'helpDesk',
-    host: 'localhost',
+    username: 'helpDesk@helpdesk',
+    password: 'HDroot@01',
+    database: 'helpdesk',
+    host: 'helpdesk.mysql.database.azure.com',
     dialect: 'mysql'
   },
   production: {
-    username: 'root',
-    password: 'password',
-    database: 'helpDesk',
-    host: 'localhost',
+    username: 'helpDesk@helpdesk',
+    password: 'HDroot@01',
+    database: 'helpdesk',
+    host: 'helpdesk.mysql.database.azure.com',
     dialect: 'mysql'
   }
 };
