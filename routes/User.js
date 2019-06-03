@@ -10,5 +10,6 @@ router.post("/Edit", contr_user.Edit);
 router.post("/Search", contr_user.Search);
 router.post("/Tickets", contr_user.Tickets);
 router.post("/Access", contr_user.Access);
+router.post("/ShowAccess", contr_user.ShowAccess);
 
 module.exports=router;

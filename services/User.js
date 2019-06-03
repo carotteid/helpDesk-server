@@ -61,7 +61,18 @@ module.exports = {
     return search;
   },
 
-  Access : async (username, email) =>{
+  Access : async (username, email) =>{  
+    const search = await User.findAll({
+      where: { 
+          username : username,
+          password : password
+      }, attributes : ["username", "password"]
+    });
+
+    return search[0];
+  },
+
+  ShowAccess : async (username, password) => {
     const search = await User.findAll({
       where: { 
         [Op.or] : [

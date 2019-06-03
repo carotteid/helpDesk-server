@@ -22,6 +22,11 @@ module.exports = {
     },
 
     Access: async (req, res) => {
+        const search = await controller.Access(req.body.username, req.body.password);
+        res.json({search});
+    },
+
+    ShowAccess: async (req, res) => {
         const search = await controller.Access(req.body.username, req.body.email);
         res.json({search});
     },
